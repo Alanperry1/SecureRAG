@@ -1,14 +1,62 @@
+# ── Environment & Secrets ─────────────────────────────────────────────────────
 .env
+.env.*
+*.pem
+*.key
+*.crt
+secrets/
+
+# ── Python ────────────────────────────────────────────────────────────────────
 __pycache__/
+**/__pycache__/
 *.py[cod]
 *.pyo
-.pytest_cache/
+*.pyd
+*.egg
+*.egg-info/
+
+# ── Virtual Environments ──────────────────────────────────────────────────────
 .venv/
 venv/
+env/
+
+# ── Build & Distribution ──────────────────────────────────────────────────────
 dist/
 build/
-*.egg-info/
-chroma_db/
+
+# ── Testing & Coverage ────────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# ── Type Checkers & Linters ───────────────────────────────────────────────────
+.mypy_cache/
+.ruff_cache/
+
+# ── ML / Model Artifacts ──────────────────────────────────────────────────────
 models/
 *.pt
+*.pth
+*.pkl
+*.joblib
+faiss_index/
+
+# ── Vector / Cache DBs ────────────────────────────────────────────────────────
+chroma_db/
+*.db
+*.sqlite
+
+# ── Redis ─────────────────────────────────────────────────────────────────────
+dump.rdb
+
+# ── Logs & Temp ───────────────────────────────────────────────────────────────
+*.log
+logs/
+tmp/
+temp/
+
+# ── IDE ───────────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
 .DS_Store
