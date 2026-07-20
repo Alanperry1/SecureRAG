@@ -1,4 +1,4 @@
-# SecureRAG 🔐
+# SecureRAG
 
 **A real-time Prompt Injection & Data Poisoning Detection Layer for RAG Pipelines.**
 
